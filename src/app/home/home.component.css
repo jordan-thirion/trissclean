@@ -1,0 +1,120 @@
+.accueil-section {
+    height: 90vh;
+    width: 100%;
+    background-image: url('/img/fond-ecran.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+
+    .fondFlou{
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        height: 32vh;
+        backdrop-filter: blur(30px);
+        border-radius: 20px;
+        border: #D6ECF4 solid 2px;
+        padding: 5vh 3vw;
+
+        h1{
+            color: #152663;
+            font-family: 'Arial', sans-serif;
+            font-weight: 500;
+            font-size: 8vh;
+            margin: 0;
+        }
+
+        p{
+            color: #152663;
+            font-family: 'Arial', sans-serif;
+            font-weight: 500;
+            font-size: 3vh;     
+        }
+    }
+    
+
+    .btn-contact-home {
+        position: relative;
+        left: 70%;
+        padding: 2vh 1vw;
+        background-color: #152663;
+        color: #D6ECF4;
+        font-weight: 700;
+        font-family: 'Arial', sans-serif;
+        border: none;
+        border-radius: 40px;
+        cursor: pointer;
+        font-size: 2vh;
+        transition: background-color 0.3s ease;
+    }
+}
+
+.presentation-section {
+    position: relative;
+    top: -50px;
+    background-color: #D6ECF4;
+    color:#152663;
+    border-radius: 50px;
+    padding: 3vh 3vw;
+
+    h2{
+        text-align: center;
+        width: 100%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 4vh;
+    }
+
+    .content{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 3vh;
+
+        p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 30%;
+        }
+
+        .rightSide{
+            width: 60%;
+            float: right;
+        }
+
+        img{
+            position: absolute;
+            border-radius: 20px;
+        }
+
+        .worker1{
+            top: 15vh
+        }
+
+        .worker2{
+            top: 20vh; left: 57vw;
+        }
+
+        .worker3{
+            top: 10vh; left: 71vw;
+        }
+
+        .worker4{
+            top: 5vh; left: 85vw;
+        }
+
+        .btn-worker-home{
+            position: absolute;
+            top: 45vh; 
+            left: 78vw;
+            padding: 2vh 1vw;
+            background-color: #D6ECF4;
+            color: #152663;
+            font-weight: 500;
+            font-family: 'Arial', sans-serif;
+            border: #152663 solid 2px;
+            border-radius: 40px;
+            cursor: pointer;
+            font-size: 1.5vh;
+        }
+    }
+
+}

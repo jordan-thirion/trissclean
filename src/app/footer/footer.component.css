@@ -1,0 +1,120 @@
+footer {
+    width: 98%;
+    display: flex;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    left: 0;
+    padding: 0 20px 0 20px;
+
+    img {
+        margin-left: 15px;
+        margin-top: 20px;
+    }
+
+    .footer-infos {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        width: 100%;
+        margin-right: 12px;
+
+        span {
+            display: block;
+            font-family: 'interstate', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        p {
+            margin: 0;
+            font-family: 'futura', sans-serif;
+            line-height: 25px;
+        }
+    }
+
+    .footer-links {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        .footer-list {
+            padding: 10px 0;
+            display: flex;
+            flex-direction: column;
+            margin-right: 5px;
+
+            img{
+                height: 6vh;
+                width: 6vh;
+            }
+            a {
+                font-family: 'futura', sans-serif;
+                font-size: 12px;
+                margin-bottom: 5px;
+                text-decoration: none;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            .footer-list-title {
+                display: block;
+                font-family: 'interstate', sans-serif;
+                font-size: 15px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+            span {
+                font-family: 'futura', sans-serif;
+                font-size: 15px;
+                margin-bottom: 10px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+/* // RESPONSIVE
+@media screen and (max-width: 1200px) {
+    footer {
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+
+        .footer-infos {
+            max-width: none;
+            align-items: center;
+            margin-bottom: 32px;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    footer {
+        padding-bottom: 200px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0px;
+
+        .footer-list {
+            margin-bottom: 20px;
+            width: 100%;
+
+            .footer-list-title {
+                margin-bottom: 5px !important;
+            }
+        }
+    }
+} */
