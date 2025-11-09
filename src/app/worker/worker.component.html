@@ -1,2 +1,28 @@
 <app-header [backgroundColor]="backgroundColor" [textColor]="textColor" [logo]="logo"></app-header>
+<div class="responsable" [ngStyle]="{ backgroundColor: textColor }">
+    <h1>Nos différents intervenants</h1>
+    <div class="responsable-card">
+        <img src="/img/cleaner3.png" class="responsable-image" />
+        <div class="texte">
+            <h2>Tristan Zeroual</h2>
+            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+        </div>       
+</div>
+<div class="worker">
+    <h1>Notre équipe</h1>
+    <div class="worker-caroussel" [ngStyle]="{ color: backgroundColor }">
+        <button class="left" (click)="prev()"><img class="icon" src="/svg/arrow-left-solid-full.svg"></button>
+        <div class="card">
+            <div class="profile-header">
+                <img class="worker-image" [src]="worker[currentIndex].image" />
+                <h4 class="worker-nom">{{worker[currentIndex].nom}}</h4>
+            </div>
+            <div class="profile-content">                
+                <h3 class="worker-titre">{{worker[currentIndex].titre}}</h3>
+                <p class="worker-texte">{{worker[currentIndex].text}}</p>
+            </div>          
+        </div>
+        <button (click)="next()"><img class="icon" src="/svg/arrow-right-solid-full.svg"></button>
+    </div>
+</div>
 <app-footer [backgroundColor]="backgroundColor" [textColor]="textColor" [logo]="logo"></app-footer>

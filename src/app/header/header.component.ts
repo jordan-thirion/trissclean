@@ -13,4 +13,7 @@ export class HeaderComponent {
   @Input() textColor: string = '#152663';
   @Input() logo: string = "/img/logoTrissCleanBlue.png";
 
+  scrollTo(element: any): void {
+    (document.getElementById(element) as HTMLElement).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
 }

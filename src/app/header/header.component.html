@@ -1,7 +1,7 @@
 <div class="header" [ngStyle]="{'background-color': backgroundColor}">
     <span>
-        <a [ngStyle]="{'color': textColor}" routerLink="/">Qui sommes nous?</a>
-        <a [ngStyle]="{'color': textColor}" routerLink="/">Nos activités</a>
+        <a [ngStyle]="{'color': textColor}" routerLink="/" (click)="scrollTo('qui')">Qui sommes nous?</a>
+        <a [ngStyle]="{'color': textColor}" routerLink="/" (click)="scrollTo('activites')">Nos activités</a>
     </span>
     <span>
         <img [src]=logo alt="TrissClean Logo">

@@ -3,8 +3,8 @@ footer {
     display: flex;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-    left: 0;
     padding: 0 20px 0 20px;
+    height: 15vh;
 
     img {
         margin-left: 15px;
@@ -59,7 +59,7 @@ footer {
             .footer-list-title {
                 display: block;
                 font-family: 'interstate', sans-serif;
-                font-size: 15px;
+                font-size: 20px;
                 font-weight: 600;
                 margin-bottom: 10px;
             }

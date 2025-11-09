@@ -5,10 +5,10 @@
     <div class="footer-links">
         <div class="footer-list">
             <span class="footer-list-title" [ngStyle]="{'color': textColor}">Menu</span>
-            <a [ngStyle]="{'color': textColor}">Qui sommes-nous?</a>
-            <a [ngStyle]="{'color': textColor}">Nos activités</a>
-            <a [ngStyle]="{'color': textColor}">Nos intervenants</a>
-            <a [ngStyle]="{'color': textColor}">Contact</a>
+            <a [ngStyle]="{'color': textColor}" routerLink="/" (click)="scrollTo('qui')">Qui sommes-nous?</a>
+            <a [ngStyle]="{'color': textColor}" routerLink="/" (click)="scrollTo('activites')">Nos activités</a>
+            <a [ngStyle]="{'color': textColor}" routerLink="/worker">Nos intervenants</a>
+            <a [ngStyle]="{'color': textColor}" routerLink="/contact">Contact</a>
         </div>
         <div class="footer-list">
             <span class="footer-list-title" [ngStyle]="{'color': textColor}">Certifications</span>

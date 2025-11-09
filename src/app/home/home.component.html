@@ -8,7 +8,7 @@
         <button routerLink="/contact" class="btn-contact-home">Demandez un devis gratuit !</button>
     </div>
 </div>
-<div class="presentation-section">
+<div class="presentation-section" id="qui">
     <h2>Qui sommes-nous ?</h2>
     <div class="content">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -19,8 +19,32 @@
             <img class="worker2" src="img/cleaner2.png" alt="Équipe de nettoyage">
             <img class="worker3" src="img/cleaner3.png" alt="Équipe de nettoyage">
             <img class="worker4" src="img/cleaner4.png" alt="Équipe de nettoyage">
-            <button routerLink="/worker" class="btn-worker-home">Nos intervenants</button>
+            <button routerLink="/worker" class="btn-worker-home">Nos intervenants <img class="icon" src="/svg/arrow-right-solid-full.svg"></button>
         </div>
     </div>
+</div>
+<div class="activites-section" id="activites">
+    <h2>Nos activités</h2>
+    <div class="activites">
+        <div class="activity-card">
+            <img style="padding: 1.5vh 1.3vw;" src="/svg/Balai.svg" alt="Nettoyage de vitres">
+            <h3>Ménages à domicile</h3>
+            <p>Notre équipe de confiance s’occupe de votre logement avec soin et discrétion, pour que vous puissiez profiter pleinement de votre temps.</p>
+        </div>
+        <div class="activity-card">
+            <img style="padding: 1.5vh 1.7vw;" src="/svg/Vector.svg" alt="Nettoyage de locaux">
+            <h3>Nettoyage industriel</h3>
+            <p>Nous intervenons avec efficacité et rigueur pour offrir à vos équipes un environnement de travail sain et irréprochable.</p>
+        </div>
+        <div class="activity-card">
+            <img style="padding: 1.5vh 1.5vw;" src="/svg/Vitre.svg" alt="Entretien ménager">
+            <h3>Vitres</h3>
+            <p>Qu’il s’agisse de bureaux, de vitrines ou de maisons, nous redonnons à vos surfaces vitrées toute leur transparence et leur brillance.</p>
+        </div>
+    </div>
+</div>
+<div class="avis-section">
+    <h2>Ce qu'ils en pensent</h2>
+    
 </div>
 <app-footer [backgroundColor]="textColor" [textColor]="backgroundColor" [logo]="logoWhite"></app-footer>
