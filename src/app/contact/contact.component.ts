@@ -36,10 +36,10 @@ export class ContactComponent {
       };
 
       emailjs.send(
-        'service_8mh0275',
-        'template_qkjupum',
+        'service_exto55o',
+        'template_n3gaug5',
         templateParams,
-        'vjYkuXp2M4_xGjndG'
+        'FKYzAsPMel9vBO_gA'
       ).then(() => {
         alert('Message envoyé avec succès !');
         this.contactForm.reset();
