@@ -15,6 +15,8 @@ export class ContactComponent {
   backgroundColor: string = '#D6ECF4';
   textColor: string = '#152663';
   logo: string = "/img/logoTrissCleanBlue.png";
+  logofb: string = "/svg/facebook-blue.svg";
+  logolinkedin: string = "/svg/linkedin-blue.svg";
 
   contactForm: FormGroup;
 

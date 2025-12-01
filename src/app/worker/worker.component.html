@@ -1,11 +1,14 @@
 <app-header [backgroundColor]="backgroundColor" [textColor]="textColor" [logo]="logo"></app-header>
 <div class="responsable" [ngStyle]="{ backgroundColor: textColor }">
     <h1>Nos différents intervenants</h1>
-    <div class="responsable-card">
-        <img src="/img/cleaner3.png" class="responsable-image" />
-        <div class="texte">
+    <div class="responsable-card">  
+        <img src="/img/cleaner3.png" class="responsable-image" />      
+        <div class="texte">            
             <h2>Tristan</h2>
-            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+            <p> En tant que fondateur de ce réseau d’indépendants, je mets à profit plus de 8 années d’expertise dans le nettoyage et le lavage de vitres pour garantir des prestations fiables et maîtrisées. <br>
+                Je propose également des services complémentaires tels que le nettoyage automobile et l’entretien de canapés et tapis. <br>
+                Rigoureux et structuré, j’assure la gestion complète des devis, contrats et facturations, afin d’offrir un accompagnement professionnel, clair et efficace.
+            </p>
         </div>
     </div>    
 </div>
@@ -26,6 +29,6 @@
         </div>
         <button (click)="next()"><img class="icon" src="/svg/arrow-right-solid-full.svg"></button>
     </div>
-    <app-footer [backgroundColor]="backgroundColor" [textColor]="textColor" [logo]="logo"></app-footer>
+    <app-footer [backgroundColor]="backgroundColor" [textColor]="textColor" [logo]="logo" [logofb]="logofb" [logolinkedin]="logolinkedin"></app-footer>
 </div>
 

@@ -15,4 +15,6 @@ export class HomeComponent {
   textColor: string = '#152663';
   logo: string = "/img/logoTrissCleanBlue.png";
   logoWhite: string = "/img/logoTrissCleanWhite.png";
+  logofb: string = "/svg/facebook-white.svg";
+  logolinkedin: string = "/svg/linkedin-white.svg";
 }

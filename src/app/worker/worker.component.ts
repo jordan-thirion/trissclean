@@ -13,23 +13,15 @@ export class WorkerComponent implements OnInit, OnDestroy {
   backgroundColor: string = '#152663';
   textColor: string = '#D6ECF4';
   logo: string = "/img/logoTrissCleanWhite.png";
+  logofb: string = "/svg/facebook-white.svg";
+  logolinkedin: string = "/svg/linkedin-white.svg";
 
   worker = [
-    { image: '/img/cleaner1.png',
-      nom: 'Jean Dupont',
-      titre: 'Nettoyeur',
-      text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore' 
+    { 
+      nom: 'Fanny',
+      titre: 'Nettoyeuse - Prothésiste ongulaire - Garde d\'enfants',
+      text: "J\'ai 22 ans, je suis prestataire indépendante. Dynamique et sérieuse, j’ai une solide expérience dans le nettoyage et je propose mes services pour l’entretien de vos locaux ou de votre domicile. Je réalise également des prestations de prothésie ongulaire et de garde d’enfants."
     },
-    { image: '/img/cleaner2.png', 
-      nom: 'Marie Curie',
-      titre: 'Nettoyeuse',
-      text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 2' 
-    },
-    { image: '/img/cleaner4.png', 
-      nom: 'Ahmed Benali',
-      titre: 'Technicien de surface',
-      text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 3' 
-    }
   ];
 
   currentIndex = 0;

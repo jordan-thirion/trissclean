@@ -12,6 +12,8 @@ export class FooterComponent {
   @Input() backgroundColor: string = '#D6ECF4';
   @Input() textColor: string = '#152663';
   @Input() logo: string = "/img/logoTrissCleanBlue.png";
+  @Input() logofb: string = "/svg/facebook-white.svg";
+  @Input() logolinkedin: string = "/svg/linkedin-white.svg";
 
   scrollTo(element: any): void {
     (document.getElementById(element) as HTMLElement).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});

@@ -10,8 +10,8 @@ footer {
     margin-top: 0;
 
     img {
-        margin-left: 15px;
-        margin-top: 20px;
+        margin-left: 3vw;
+        margin-top: 4vh;
     }
 
     .footer-infos {
@@ -34,8 +34,10 @@ footer {
             margin-right: 5px;
 
             img{
-                height: 6vh;
-                width: 6vh;
+                margin: 0;
+                height: 3vh;
+                width: 3vh;
+                margin-right: 2vh;
             }
             a {
                 font-family: 'futura', sans-serif;
@@ -66,45 +68,60 @@ footer {
     }
 }
 
-/* // RESPONSIVE
+
 @media screen and (max-width: 1200px) {
     footer {
-        padding: 50px;
+        padding: 2vh 2vw;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     footer {
-        flex-direction: column;
+        padding: 2vh 1vw;
+
+        img{
+            margin: 0;
+            margin-top: 5vh;
+            padding: 0;
+            height: 5vh;
+        }
 
         .footer-infos {
             max-width: none;
             align-items: center;
             margin-bottom: 32px;
         }
+
+        .footer-links{
+            margin-left: 0;
+        }
     }
 }
 
 @media screen and (max-width: 650px) {
-    footer {
-        padding-bottom: 200px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .footer-links {
+    footer{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        margin-left: 0px;
+        height: max-content;
 
-        .footer-list {
-            margin-bottom: 20px;
+        .footer-infos {
             width: 100%;
+            max-width: none;
+        }
 
-            .footer-list-title {
-                margin-bottom: 5px !important;
+        .footer-links {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            .footer-list {
+                margin-bottom: 20px;
+                width: 100%;
+
+                .footer-list-title {
+                    margin-bottom: 5px !important;
+                }
             }
         }
     }
-} */
+}
