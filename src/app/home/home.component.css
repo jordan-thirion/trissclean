@@ -73,36 +73,47 @@
 
         .texte{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            width: 30%;
+            width: 35%;
+            font-size: 1.7vh;
+        }
+
+        b{
+            font-size: 2vh;
+            font-weight: 600;
+        }
+
+        .logo{
+            width: 4vh;
+            margin-left: 1vw;
         }
 
         .rightSide{
             width: 60%;
             float: right;
-        }
 
-        img{
-            position: absolute;
-            border-radius: 20px;
-        }
+            img{
+                position: absolute;
+                border-radius: 20px;
+            }
 
-        .worker1{
-            top: 15vh
-        }
+            .worker1{
+                top: 15vh
+            }
 
-        .worker2{
-            top: 20vh; left: 57vw;
-        }
+            .worker2{
+                top: 20vh; left: 57vw;
+            }
 
-        .worker3{
-            top: 10vh; left: 71vw;
-        }
+            .worker3{
+                width: 10vw;
+                top: 10vh; left: 71vw;
+            }
 
-        .worker4{
-            top: 5vh; left: 85vw;
-        }
+            .worker4{
+                top: 5vh; left: 85vw;
+            }
 
-        .btn-worker-home{
+            .btn-worker-home{
             position: absolute;
             top: 45vh; 
             left: 78vw;
@@ -129,6 +140,7 @@
                 background-color: #152663;
                 height: 5.7vh;
                 border-radius: 50px;                
+            }
             }
         }
     }
