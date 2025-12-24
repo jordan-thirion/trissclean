@@ -8,7 +8,7 @@
         margin-top: 20vh;
         color: #152663;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 5vh;
+        font-size: 7vh;
     }
 
     .responsable-card{
@@ -28,13 +28,13 @@
             width: 50vw;
 
             h2{
-                font-size: 4vh;
+                font-size: 5vh;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             }
 
             p{
-                font-size: 2vh;
-                font-family: 'Arial', sans-serif;
+                font-size: 2.5vh;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 text-align: left;
             }
         }
@@ -52,7 +52,7 @@
         margin-top: 10vh;
         color: #152663;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 5vh;
+        font-size: 7vh;
     }
 
     .worker-caroussel{
@@ -61,8 +61,6 @@
         align-items: center;
         display: flex;
         justify-content: center;
-        gap: 2rem;
-        padding: 2rem;
         margin: auto;
         margin-bottom: 10vh;
 
@@ -70,7 +68,7 @@
             border-radius: 20px;
             margin-left: 3vw;
             margin-right: 3vw;
-            padding: 2rem;
+            padding: 1vh 1vw;
             width: 100%;
             max-width: 30vw;
             box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
@@ -94,7 +92,7 @@
             }
 
             .worker-nom{
-                font-size: 3vh;
+                font-size: 5vh;
                 color: #152663;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 margin: 1vh 0 0.5vh 1.5vw;
@@ -106,32 +104,99 @@
                 margin-top: 1vh;
             }
 
-            .worker-titre{
-                font-size: 4vh;
+            .worker-texte{
+                font-size: 2.5vh;
+                padding: 0 1vw;
                 color: #152663;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                margin: 0 0 1vh 0;
-                text-align: center;
-            }
-
-            .worker-texte{
-                font-size: 2vh;
-                color: #152663;
-                font-family: 'Arial', sans-serif;
             }
         }
   
         button {
             background-color: #152663;
             color: #D6ECF4;
-            width: 2vw;
-            height: 2vw;
+            width: 3vw;
+            height: 3vw;
             border-radius: 50%;
             border: none;
             cursor: pointer;
 
             :hover {
                 transform: matrix(1.1, 0, 0, 1.1, 0, 0);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .responsable{
+        .responsable-card{
+            padding: 0 15vw;
+
+            img{
+                width: 18vw;
+                height: max-content;
+            }
+        }
+
+        .texte{
+            width: 60vw;
+        }
+    }
+
+    .worker {
+        .worker-caroussel{
+            width: 70vw;
+
+            .card{
+                max-width: 40vw;
+
+                .worker-image{
+                    width: 6vw;                
+                }
+
+                .worker-nom{
+                    font-size: 5vh;
+                }
+
+                .worker-titre{
+                    font-size: 4vh;
+                }
+
+                .worker-texte{
+                    font-size: 2.5vh;
+                }
+            }
+
+            button {
+                width: 4vw;
+                height: 4vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .responsable{
+        .responsable-card{
+            padding: 0 12vw;
+        }
+
+        img{
+            margin-top: 16vh;
+        }
+
+        .texte{
+            width: 70vw;
+        }
+    }
+
+    .worker {
+        .worker-caroussel{
+            width: 75vw;
+
+            .card{
+                max-width: 50vw;
             }
         }
     }
@@ -232,6 +297,37 @@
             button {
                 width: 10vw;
                 height: 5.5vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .responsable{
+        h1{
+            font-size: 5vh;
+        }
+    }
+
+    .worker {
+        h1{
+            font-size: 5vh;
+        }
+
+        .worker-caroussel{
+
+            .card{
+                max-width: 80vw;
+                margin: auto;
+                margin-bottom: 5vh;
+
+                .worker-image{
+                    width: 10vw;                
+                }
+            }
+
+            button {
+                display: none;
             }
         }
     }

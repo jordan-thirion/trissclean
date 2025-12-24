@@ -36,8 +36,8 @@
 @media screen and (max-width: 1500px) {
     .header {
         img {
-            margin-left: 10vw;
-            margin-right: 10vw;
+            margin-left: 8vw;
+            margin-right: 8vw;
         }
 
         a {
@@ -55,8 +55,8 @@
 @media screen and (max-width: 1200px) {
     .header {
         img {
-            margin-left: 7vw;
-            margin-right: 6vw;
+            margin-left: 5vw;
+            margin-right: 5vw;
         }
 
         a {
@@ -71,12 +71,12 @@
     }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 900px) {
     .header {
         img {
             height: 5vh;
-            margin-left: 7vw;
-            margin-right: 7vw;
+            margin-left: 4vw;
+            margin-right: 4vw;
         }
 
         a {
@@ -115,10 +115,12 @@
     .header {
         img {
             height: 2.5vh;
+            margin-left: 3vw;
+            margin-right: 4vw;
         }
 
         a {
-            font-size: 1.1vh;
+            font-size: 1.5vh;
         }
 
         .buttonContact {

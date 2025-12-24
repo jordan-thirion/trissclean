@@ -19,9 +19,12 @@ export class WorkerComponent implements OnInit, OnDestroy {
   worker = [
     { 
       nom: 'Fanny',
-      titre: 'Nettoyeuse - Prothésiste ongulaire - Garde d\'enfants',
       text: "J\'ai 22 ans, je suis prestataire indépendante. Dynamique et sérieuse, j’ai une solide expérience dans le nettoyage et je propose mes services pour l’entretien de vos locaux ou de votre domicile. Je réalise également des prestations de prothésie ongulaire et de garde d’enfants."
     },
+    {
+      nom: 'Edgard',
+      text: "Dynamique, sérieux et engagé, je possède une solide expérience dans les services de nettoyage et de peinture. J'offre un entretien professionnel pour votre domicile ou votre local, en garantissant ordre, qualité et finitions impeccables.Expert en couleur, maîtres du détail."
+    }
   ];
 
   currentIndex = 0;
