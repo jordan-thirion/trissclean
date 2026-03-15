@@ -117,9 +117,12 @@
   }
 }
 
-@media screen and (max-width: 600px) {
-  .contact .content .info a{
-    font-size: 2vh;
+@media screen and (max-width: 650px) {
+  .contact {
+    margin-top: 5vh;
+    .content .info a{
+      font-size: 2vh;
+    }
   }
 }
 

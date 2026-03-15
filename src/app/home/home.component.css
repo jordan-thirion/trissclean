@@ -15,6 +15,7 @@
         border-radius: 20px;
         border: #D6ECF4 solid 2px;
         padding: 5vh 3vw;
+        text-decoration: none;
 
         h1{
             color: #152663;
@@ -328,7 +329,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     .accueil-section {
         .fondFlou{
             height: 25vh;
@@ -343,9 +344,9 @@
         }
 
         .btn-contact-home {
-            font-size: 1.5vh;
+            font-size: 2vh;
             padding: 1.5vh 1vw;
-            left: 53%;
+            left: 30%;
         }
     }
 

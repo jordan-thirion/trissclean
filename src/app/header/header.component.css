@@ -1,4 +1,4 @@
-.header {
+.header-desktop {
     width: 90vw;
     height: 11vh;
     position: absolute;
@@ -34,8 +34,44 @@
     }
 }
 
+.header-mobile {
+    width: 100vw;
+    height: 20vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0px 0px 100px 100px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+    img {
+        height: 6vh;
+        margin-bottom: 1vh;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 2.5vh;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 1vh;
+    }
+
+    .buttonContact {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 4vh;
+        padding: 0 10px 2px 10px;
+        border-radius: 999px;
+        margin-top: 1vh;
+    }
+}
+
 @media screen and (max-width: 1500px) {
-    .header {
+    .header-desktop {
 
         span{
             width: auto;
@@ -59,7 +95,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .header {
+    .header-desktop {
         img {
             height: 5vh;
             margin-left: 5vw;
@@ -79,7 +115,7 @@
 }
 
 @media screen and (max-width: 900px) {
-    .header {
+    .header-desktop {
         img {
             height: 4vh;
             margin-left: 3vw;
@@ -98,38 +134,43 @@
     }
 }
 
-@media screen and (max-width: 600px) {
-    .header {
-        height: 16vh;
+@media screen and (max-width: 650px) {
+    .header-mobile {
+        display: flex;
+        height: 20vh;
 
         img {
-            height: 4vh;
+            height: 8vh;
             margin-left: 4vw;
             margin-right: 4vw;
         }
 
         a {
-            font-size: 1.5vh;
+            font-size: 2.5vh;
             margin-top: 1vh;
+            margin-left: 4vw;
         }
 
         .buttonContact {
-            height: 3vh;
-            padding: 0 6px 2px 6px;
+            height: 3.5vh;
+            padding: 0 10px 2px 10px;
         }
+    }
+
+    .header-desktop {
+        display: none;
     }
 }
 
 @media screen and (max-width: 450px) {
-    .header {
+    .header-mobile {
         img {
-            height: 2.5vh;
             margin-left: 3vw;
             margin-right: 4vw;
         }
 
         a {
-            font-size: 1.2vh;
+            font-size: 2vh;
         }
 
         .buttonContact {
@@ -137,4 +178,25 @@
             padding: 0 5px 2px 5px;
         }
     }
+}
+
+@media screen and (max-width: 350px) {
+    .header-mobile {
+        height: 20vh;
+
+        img {
+            margin-left: 2vw;
+            margin-right: 3vw;
+        }
+
+        a {
+            font-size: 1vh;
+        }
+
+        .buttonContact {
+            height: 2vh;
+            padding: 0 4px 2px 4px;
+        }
+    }
+    
 }
