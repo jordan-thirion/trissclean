@@ -43,7 +43,7 @@ footer {
                 font-family: 'futura', sans-serif;
                 font-size: 15px;
                 margin-bottom: 5px;
-                text-decoration: solid underline;
+                text-decoration: none;
             }
             &:last-child {
                 margin-right: 0;
