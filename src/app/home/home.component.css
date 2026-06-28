@@ -1,9 +1,10 @@
-.accueil-section {
+.accueil-section { /* OK */
     height: 90vh;
     width: 100%;
     background-image: url('/img/fond-ecran.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: right center;
     display: flex;
 
     .fondFlou{
@@ -21,12 +22,23 @@
             color: #152663;
             font-size: 8vh;
             margin: 0;
+            font-family: "Cabinet Grotesk", system-ui, sans-serif;
+            font-weight: 700;
         }
 
-        p{
+        h2{
             color: #152663;
-            font-weight: 500;
-            font-size: 3vh;     
+            font-size: 2.5vh;
+            margin: 0;
+            font-family: "Cabinet Grotesk", system-ui, sans-serif;
+            font-weight: 300; /* 500? */
+        }
+
+        h3{
+            color: #152663;
+            font-family: "Cabinet Grotesk", system-ui, sans-serif;
+            font-weight: 300;
+            font-size: 3vh;
         }
     }
     
@@ -37,11 +49,12 @@
         padding: 2vh 1vw;
         background-color: #152663;
         color: #FCF8D2;
-        font-weight: 700;
         border: none;
-        border-radius: 40px;
+        border-radius: 90px;
         cursor: pointer;
-        font-size: 2vh;
+        font-family: "Cabinet Grotesk", system-ui, sans-serif;
+        font-weight: 700;
+        font-size: 3.5vh;
         transition: background-color 0.3s ease;
     }
 
@@ -51,7 +64,7 @@
     }
 }
 
-.presentation-section {
+.presentation-section { /* à  revoir */
     position: relative;
     top: -50px;
     background-color: #D6ECF4;
@@ -63,7 +76,9 @@
     h2{
         text-align: center;
         width: 100%;
-        font-size: 4vh;
+        font-size: 5vh;
+        font-family: "Cabinet Grotesk", system-ui, sans-serif;
+        font-weight: 500;
     }
 
     .content{
@@ -123,7 +138,7 @@
             background-color: #D6ECF4;
             color: #152663;
             font-weight: 500;
-            font-family: cabinet-grotesk, sans-serif;
+            font-family: "Cabinet Grotesk", system-ui, sans-serif;
             border: #152663 solid 2px;
             border-radius: 40px;
             cursor: pointer;
@@ -152,7 +167,7 @@
     }
 }
 
-.activites-section {
+.activites-section { /* OK */
     position: relative;
     top: -20vh;
     height: fit-content;
@@ -162,19 +177,22 @@
     border-radius: 50px;
     z-index: 98;
 
-    h2{
+    h3{
         margin-top: 20vh;
         text-align: center;
         color: #D6ECF4;
         width: 100%;
-        font-family: cabinet-grotesk, sans-serif;
-        font-size: 4vh;
+        font-family: "Cabinet Grotesk", system-ui, sans-serif;
+        font-weight: 500;
+        font-size: 7vh;
     }
 
     .activites{
         display: inline-flex;
         justify-content: space-around;
         align-items: center;
+        width: 80%;
+        margin-left: 10%;
         margin-top: 10vh;
 
         .activity-card{
@@ -184,64 +202,108 @@
                 #152663
             );
             border-radius: 20px;
-            height: 27vh;
-            width: 25%;
+            height: 35vh;
+            width: 35vh;
             padding: 2vh 2vw;
-            box-shadow: 0 0 8px #D6ECF4;
+            box-shadow: 2px 2px 10px #D6ECF4;
             text-align: center;
 
-            img{
+            img{ /* a revoir */
                 position: relative;
                 top: -7vh;
+                height: 12vh;
                 background-color: #152663;
-                border: #D6ECF4 solid 2px;
+                border: #D6ECF4 solid 3px;
                 border-radius: 999px;
+                box-sizing: border-box;
             }
 
-            h3{
-                font-family: cabinet-grotesk, sans-serif;
+            h2{
+                font-family: "Cabinet Grotesk", system-ui, sans-serif;
+                font-weight: 500;
                 color: #D6ECF4;
-                font-size: 3vh;
+                font-size: 4vh;
                 margin-top: -4vh;
             }
 
             p{
-                font-family: cabinet-grotesk, sans-serif;
+                font-family: "Cabinet Grotesk", system-ui, sans-serif;
+                font-weight: 300;
                 color: #D6ECF4;
-                font-size: 2vh;
+                font-size: 2.5vh;
             }
         }
     }
 }
 
-.avis-section{
+.avis-section{ /* OK */
     position: relative;
     height: fit-content;
     margin-top: -30vh;
     margin-bottom: 0;
     padding-bottom: 10vh;
     background: linear-gradient(
-        to left,
-        #D6ECF4 25%,
-        #5275C6 75%
+    270deg,
+    #D6ECF4 30%,
+    #7E9FD6 100%
     );
     display: flex;
     flex-direction: column;
 
-    h2{
+    h3{
         text-align: center;
         color:#152663;
-        font-size: 4vh;
+        font-family: "Cabinet Grotesk", system-ui, sans-serif;
+        font-weight: 500;
+        font-size: 7vh;
         margin-top: 20vh;
     }
 
     iframe{
-        display: flex;
         margin: auto;
         border: none;
-        padding: 3vw;
         width: 50vw;
         height: 30vh;
+        /* box-shadow: 2px 2px 10px #D6ECF4; */
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .avis-section{
+        iframe{
+            width: 60vw;
+            height: 30vh;
+            margin-bottom: 5vh;
+        }
+    }
+
+    .activites-section {
+        .activites{
+            width: 100%;
+            margin-left: 0;
+
+            .activity-card{
+                height: 30vh;
+                width: 30vh;
+
+                h2{
+                    font-size: 3.5vh;
+                }
+
+                p{
+                    font-size: 2vh;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .accueil-section {
+        .btn-contact-home {
+            font-size: 2.5vh;
+            padding: 1.5vh 1vw;
+        }
     }
 }
 
@@ -249,21 +311,26 @@
     .accueil-section {
         .fondFlou{
             height: 27vh;
+            width: 75vw;
             left: 5%;
             right: 5%;
-
 
             h1{
                 font-size: 6vh;
             }
 
             p{
-                font-size: 2.5vh;  
+                font-size: 2.5vh;
+            }
+
+            h3{
+                font-size: 2.5vh;
             }
         }
 
         .btn-contact-home {
-            font-size: 1.5vh;
+            font-size: 2.5vh;
+            left: 70%;
             padding: 1.5vh 1vw;
         }
     }
@@ -325,6 +392,14 @@
             .activity-card{
                 width: 80%;
                 margin-bottom: 5vh;
+
+                h2{
+                    font-size: 4.5vh;
+                }
+
+                p{
+                    font-size: 3vh;
+                }
             }
         }
     }
@@ -337,38 +412,137 @@
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 710px) {
     .accueil-section {
         .fondFlou{
-            height: 25vh;
-            
+
             h1{
                 font-size: 5vh;
             }
 
             p{
-                font-size: 2.5vh;  
+                font-size: 2.5vh;
+            }
+
+            h3{
+                font-size: 2.5vh;
+            }
+        }
+
+        .btn-contact-home {
+            font-size: 2.5vh;
+            left: 65%;
+            padding: 1.5vh 1vw;
+        }
+    }
+
+    .activites-section {
+        .activites{
+            .activity-card{
+                margin-bottom: 7vh;
+
+                h2{
+                    font-size: 4.5vh;
+                }
+
+                p{
+                    font-size: 3vh;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .accueil-section {
+        height: 80vh;
+
+        .fondFlou{
+            height: 27vh;
+            width: 65vw;
+
+            h1{
+                font-size: 5vh;
+            }
+
+            p{
+                font-size: 2.5vh;
+            }
+
+            h3{
+                font-size: 2.5vh;
+            }
+
+            .btn-contact-home {
+                font-size: 2vh;
+                left: 60%;
+                padding: 1.5vh 1vw;
+            }
+        }
+    }
+
+   .activites-section {
+        .activites{
+            .activity-card{
+                margin-bottom: 7vh;
+
+                h2{
+                    font-size: 4vh;
+                }
+
+                p{
+                    font-size: 2.5vh;
+                }
+            }
+        }
+    }
+}
+
+@media screen  and (max-width: 500px) {
+    .accueil-section {
+        .fondFlou{
+            height: 27vh;
+            width: 75vw;
+
+            h1{
+                font-size: 5vh;
+            }
+
+            p{
+                font-size: 2.5vh;
+            }
+
+            h3{
+                font-size: 2.5vh;
             }
         }
 
         .btn-contact-home {
             font-size: 2vh;
+            left: 60%;
             padding: 1.5vh 1vw;
-            left: 30%;
         }
     }
+}
 
-    .presentation-section {
+@media screen and (max-width: 450px) {
+    .accueil-section {
+        height: 80vh;
 
-    .content{
-        .texte {
-            width: 100%;
-            margin-left: 3vw;
+        .btn-contact-home { /* fait n'importe quoi */
+            font-size: 20vh;
+            left: -10%;
+            padding: 1.5vh 1vw;
         }
+    }   
+}
 
-        .rightSide{
-            display: none;
+@media screen and (max-width: 400px) {
+    .accueil-section {
+
+        .btn-contact-home { /* fait n'importe quoi */
+            left: -10%;
+            padding: 1.5vh 1vw;
         }
-    }
-    }
+    }   
 }

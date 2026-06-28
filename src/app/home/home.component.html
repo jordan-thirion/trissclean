@@ -1,10 +1,10 @@
 <app-header [backgroundColor]="backgroundColor" [textColor]="textColor" [logo]="logo"></app-header>
 <div class="accueil-section">
     <a routerLink="/contact" class="fondFlou">
-        <p style="margin-bottom: 3vh; margin-top: 0;">VITRES - NETTOYAGE - ENTRETIEN</p>
+        <h2 style="margin-bottom: 3vh; margin-top: 0;">VITRE - NETTOYAGE - ENTRETIEN</h2>
         <h1>Un travail clean</h1>
         <h1>à petit prix!</h1>
-        <p style="margin-top: 2vh;">Réseau d’indépendants de nettoyage en région Rhône-Alpes</p>
+        <h3 style="margin-top: 2vh;">Réseau d’indépendants de nettoyage en région Rhône-Alpes</h3>
         <button routerLink="/contact" class="btn-contact-home">Demandez un devis gratuit !</button>
     </a>
 </div>
@@ -38,27 +38,27 @@
     </div>
 </div>
 <div class="activites-section" id="activites">
-    <h2>Nos activités</h2>
+    <h3>Nos activités</h3>
     <div class="activites">
         <div class="activity-card">
             <img style="padding: 1.5vh 1.3vw;" src="/svg/Balai.svg" alt="Nettoyage de vitres">
-            <h3>Ménages à domicile</h3>
+            <h2>Ménages à domicile</h2>
             <p>Notre équipe de confiance s’occupe de votre logement avec soin et discrétion, pour que vous puissiez profiter pleinement de votre temps.</p>
         </div>
         <div class="activity-card">
             <img style="padding: 1.5vh 1.7vw;" src="/svg/Vector.svg" alt="Nettoyage de locaux">
-            <h3>Nettoyage industriel</h3>
+            <h2>Nettoyage industriel</h2>
             <p>Nous intervenons avec efficacité et rigueur pour offrir à vos équipes un environnement de travail sain et irréprochable.</p>
         </div>
         <div class="activity-card">
             <img style="padding: 1.5vh 1.5vw;" src="/svg/Vitre.svg" alt="Entretien ménager">
-            <h3>Lavages de vitres</h3>
+            <h2>Vitres</h2>
             <p>Qu’il s’agisse de bureaux, de vitrines ou de maisons, nous redonnons à vos surfaces vitrées toute leur transparence et leur brillance.</p>
         </div>
     </div>
 </div>
 <div class="avis-section">
-    <h2>Ce qu'ils en pensent</h2>
+    <h3>Ce qu'ils en pensent</h3>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.10/iframeResizer.min.js"></script>
     <iframe onload="iFrameResize(this)" src="https://65f057af8ce344c0a93c8deb56f6573c.elf.site"></iframe>
     <app-footer [backgroundColor]="textColor" [textColor]="backgroundColor" [logo]="logoWhite" [logofb]="logofb" [logolinkedin]="logolinkedin"></app-footer>

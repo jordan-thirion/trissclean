@@ -1,10 +1,39 @@
 @font-face {
-  font-family: "Cabinet grotesk";
+  /* Light */
+  font-family: "Cabinet Grotesk";
   src: url("/fonts/CabinetGrotesk-Light.woff2") format("woff2"),
-       url("/fonts/CabinetGrotesk-Regular.woff") format("woff"),
-       url("/fonts/CabinetGrotesk-Bold.woff2") format("woff2"),
-       url("/fonts/CabinetGrotesk-Medium.woff2") format("woff2");
+       url("/fonts/CabinetGrotesk-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  /* Regular */
+  font-family: "Cabinet Grotesk";
+  src: url("/fonts/CabinetGrotesk-Regular.woff2") format("woff2"),
+       url("/fonts/CabinetGrotesk-Regular.woff") format("woff");
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  /* Medium */
+  font-family: "Cabinet Grotesk";
+  src: url("/fonts/CabinetGrotesk-Medium.woff2") format("woff2"),
+       url("/fonts/CabinetGrotesk-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  /* Bold */
+  font-family: "Cabinet Grotesk";
+  src: url("/fonts/CabinetGrotesk-Bold.woff2") format("woff2"),
+       url("/fonts/CabinetGrotesk-Bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -15,5 +44,17 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Cabinet grotesk", system-ui, sans-serif;
+  font-family: "Cabinet Grotesk", system-ui, sans-serif;
+  font-weight: 400;
 }
+
+/* Utility classes to force weights when needed */
+.gk-light { font-weight: 300; }
+.gk-regular { font-weight: 400; }
+.gk-medium { font-weight: 500; }
+.gk-bold { font-weight: 700; }
+
+/* Example: headings */
+h1, h2, h3 { font-family: "Cabinet Grotesk", system-ui, sans-serif; }
+
+/* Fallback: if font fails, system fonts will be used */
